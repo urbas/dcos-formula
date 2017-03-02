@@ -1,5 +1,5 @@
 {% import_yaml "dcos/defaults.yaml" as defaults %}
 {% set config = salt['pillar.get']('dcos', default=defaults['dcos'], merge=True) %}
 
-{% set os_family_lookup = salt['grains.filter_by'](config['lookup'], merge=salt['pillar.get']('dcos:os-config'), default='Debian') %}
+{% set os_family_lookup = salt['grains.filter_by'](config['os-config'], merge=salt['pillar.get']('dcos:os-config'), default='Debian') %}
 {% set os_config = salt['grains.filter_by'](os_family_lookup, grain='osfinger', default='default') %}
