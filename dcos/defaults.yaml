@@ -2,8 +2,6 @@ dcos:
   os-config:
     Debian:
         default:
-          package_dependencies:
-            echo: Hello Deb non-14
+          echo: Hello Deb non-14
         Ubuntu-14.04:
-          package_dependencies:
-            echo: Hello Deb 14
+          echo: Hello Deb 14
