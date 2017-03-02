@@ -1,7 +1,5 @@
 dcos:
   os-config:
     Debian:
-        default:
-          echo: Hello Deb non-14
-        Ubuntu-14.04:
-          echo: Hello Deb 14
+        default: []
+        Ubuntu-14.04: []
